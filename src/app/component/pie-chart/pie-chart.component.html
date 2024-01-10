@@ -1,0 +1,19 @@
+<div class="text-center text-gray-300">
+  <h2>
+  My Spending for June
+</h2>
+<span class="text-xs text-gray-400">Well Done! Your Budget is on track</span>
+&nbsp;<span class="text-[30px]">😉</span>
+</div>
+<div id="chart">
+    <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [labels]="chartOptions.labels"
+      [fill]="chartOptions.fill"
+      [plotOptions]="chartOptions.plotOptions"
+      [stroke]="chartOptions.stroke"
+      [dataLabels]="chartOptions.dataLabels"
+      [responsive]="chartOptions.responsive"
+    ></apx-chart>
+  </div>

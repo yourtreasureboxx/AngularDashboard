@@ -1,0 +1,22 @@
+<div class="mt-[-40px]">
+  <div class="text-center text-gray-300">
+    <h2>
+    My Cashflow for June
+  </h2>
+  </div>
+  <div id="chart" class="ml-[-30px]" >
+      <apx-chart
+        [series]="chartOptions.series"
+        [chart]="chartOptions.chart"
+        [plotOptions]="chartOptions.plotOptions"
+        [xaxis]="chartOptions.xaxis"
+        [stroke]="chartOptions.stroke"
+      ></apx-chart>
+  </div>
+  <div class="text-right text-gray-300 ml-[300px] mt-[-140px]">
+    <h2 class="text-xl font-medium">
+      ₹5410.00
+  </h2>
+  <span class="text-xs text-gray-400 mr-[30px]">Remaning</span>
+  </div>
+</div>

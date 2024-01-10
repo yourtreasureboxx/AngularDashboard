@@ -1,0 +1,126 @@
+<mat-grid-list cols="3" rowHeight="100px" class="bg-black mx-[8px] my-[4px]" [gutterSize]="'15px'">
+  <mat-grid-tile class="top" colspan="3">
+    <mat-toolbar class="top">
+      <div class="relative w-full mt-[-36px]">
+        <div class="absolute left-0 text-gray-200">
+          <span>FIQ</span>
+        </div>
+        <div class="absolute right-0 space-x-4 text-gray-200">
+          <mat-icon>notifications</mat-icon>
+          <mat-icon>settings</mat-icon>
+          <mat-icon>person</mat-icon>
+        </div>
+        <div class="absolute left-0 top-10">
+          <p class="bg-gradient-to-r from-gray-400 via-green-500 to-red-400 inline-block text-transparent bg-clip-text"><mat-icon>verified</mat-icon>Welcome back, Samiullah!</p>
+        </div>
+        <div class="absolute right-0 top-10">
+          <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="end">
+            <mat-tab label="Insights"></mat-tab>
+            <mat-tab label="Progress"></mat-tab>
+            <mat-tab label="Forecast"></mat-tab>
+          </mat-tab-group>
+        </div>
+      </div>
+      
+    </mat-toolbar>
+  </mat-grid-tile>
+  <div>
+    <mat-grid-tile rowspan="3">
+      <app-pie-chart></app-pie-chart>
+    </mat-grid-tile>
+    <mat-grid-tile rowspan="2">
+      <app-bar-chart></app-bar-chart>
+    </mat-grid-tile>
+    <mat-grid-tile rowspan="4">
+      <app-line-chart></app-line-chart>
+    </mat-grid-tile>
+    <mat-grid-tile rowspan="3">
+      <div>
+        <p class="text-gray-300 text-center py-3">Improving Financial Habits</p>
+        <div id="grid">
+          <div id="item1">
+            <div>
+              <div class="font-semibold pl-4 pt-2"><h5 class="text-sm text-gray-400">Month Savings</h5>
+              <p class="text-xs text-gray-600">Bank Managements </p></div>
+              <div class="relative">
+                <app-circle-chart class="absolute left-0 ml-[-100px] mt-[-10px]" [input]="25"></app-circle-chart>
+                <div class="absolute right-10 font-semibold mt-[15px]">
+                  <h4 class="text-sm text-sky-600">₹1440.50</h4>
+                <span class="text-xs text-gray-600">11 days left</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="item2">
+            <div>
+              <div class="font-semibold pl-4 pt-2"><h5 class="text-sm text-gray-400">₹110/day Petrol</h5>
+                <p class="text-xs text-gray-600">Fuel</p></div>
+                <div class="relative">
+                  <app-circle-chart class="absolute left-0 ml-[-100px] mt-[-10px]" [input]="75"></app-circle-chart>
+                  <div class="absolute right-10 font-semibold mt-[15px]">
+                    <h4 class="text-sm text-sky-600">₹3010.25</h4>
+                  <span class="text-xs text-gray-600">14 days left</span>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div id="item3">
+            <div>
+              <div class="font-semibold pl-4 pt-2"><h5 class="text-sm text-gray-400">Travel</h5>
+                <p class="text-xs text-gray-600">Bike Maintenace</p></div>
+                <div class="relative">
+                  <app-circle-chart class="absolute left-0 ml-[-100px] mt-[-10px]" [input]="45"></app-circle-chart>
+                  <div class="absolute right-10 font-semibold mt-[15px]">
+                    <h4 class="text-sm text-sky-600">₹2300.90</h4>
+                  <span class="text-xs text-gray-600">10 days left</span>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div id="item4">
+            <div>
+              <div class="font-semibold pl-4 pt-2"><h5 class="text-sm text-gray-400">LYFT Savings</h5>
+                <p class="text-xs text-gray-600">NA</p></div>
+                <div class="relative">
+                  <app-circle-chart class="absolute left-0 ml-[-100px] mt-[-10px]" [input]="60"></app-circle-chart>
+                  <div class="absolute right-10 font-semibold mt-[15px]">
+                    <h4 class="text-sm text-sky-600">₹5410.00</h4>
+                  <span class="text-xs text-gray-600">12 days left</span>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile rowspan="2">
+      <app-goals-chart></app-goals-chart>
+    </mat-grid-tile>
+    <mat-grid-tile rowspan="1">
+      <div class="mt-[-20px]">
+        <h3 class="text-center text-gray-300 text-lg font-medium" >Invest In My Future
+        </h3>
+        <p class="text-center text-gray-600 text-xs mb-[-10px]">
+          FIQ STORAGE
+        </p>
+        <h4 class="text-left text-gray-500 font-medium">
+          <Span class="font-medium text-gray-300 text-[28px] pr-2">$30</Span>
+          Invested since your Last Login
+          <span class="text-[28px] pl-2">😎</span>
+        </h4>
+      </div>
+    </mat-grid-tile>
+  </div>
+  <mat-grid-tile colspan="3" class="bottom">
+    <div class="bottom">
+      <mat-icon class="active">home</mat-icon>
+      <span class="active">Dashboard</span>
+      <mat-icon>insights</mat-icon>
+      <span>Insights</span>
+      <mat-icon>settings</mat-icon>
+      <span>Settings</span>
+      <mat-icon>person</mat-icon>
+      <span>Me</span>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

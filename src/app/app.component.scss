@@ -1,0 +1,45 @@
+div mat-grid-tile{
+    @apply bg-indigo-950 rounded-xl shadow-xl;
+}
+.top{
+    @apply bg-indigo-950 rounded-t-[32px];
+}
+.bottom{
+    @apply bg-indigo-950 rounded-b-[32px];
+    mat-icon{
+        @apply ml-[120px] text-gray-700 mb-[-5px];
+    }
+    span{
+        @apply text-gray-700;
+    }
+    .active{
+        @apply text-blue-400;
+    }
+}
+mat-grid-tile-header{
+    @apply bg-indigo-950;
+}
+mat-toolbar{
+    @apply bg-indigo-950 text-white justify-between absolute mt-[-40px];
+
+    .bottom{
+        @apply mt-[70px] mb-[-15px] ;
+    }
+}
+::ng-deep .mdc-tab__text-label {
+    color:whitesmoke !important;
+  }
+::ng-deep .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label{
+    color:cornflowerblue !important;
+}
+td{
+    @apply border-[1px] border-gray-600;
+}
+#grid {
+    @apply h-72 grid gap-3 auto-cols-[200px] auto-rows-[130px];
+    grid-template-areas: "a a";
+    
+}
+#grid > div {
+    @apply bg-indigo-950 border-[1px] shadow-[rgba(0,0,0,0.25)_0px_54px_55px,rgba(0,0,0,0.12)_0px_-12px_30px,rgba(0,0,0,0.12)_0px_4px_6px,rgba(0,0,0,0.17)_0px_12px_13px,rgba(0,0,0,0.09)_0px_-3px_5px] border-gray-700 rounded-lg;
+}
